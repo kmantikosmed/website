@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Δεν χρειάζεται ευρετηρίαση της σελίδας κράτησης (φορτώνει εξωτερικό widget)
+Disallow: /booking.html
+
+Sitemap: https://drmantikos.gr/sitemap.xml
