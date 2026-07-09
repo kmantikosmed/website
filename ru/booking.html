@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Записаться — Клиника Константиноса Мантикоса</title>
+<meta name="description" content="Online κράτηση ραντεβού." />
+<meta name="robots" content="noindex, follow" />
+<meta name="theme-color" content="#1b1714" />
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="../favicon.ico" sizes="any" />
+<link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+<link rel="manifest" href="../site.webmanifest" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/premium.css" />
+<link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css" />
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<style>
+  :root{--accent:#1f5a52;--accent-deep:#163f39;--gold:#c08a3e}
+  .book{padding:48px 0 110px}
+  .book-card{max-width:620px;margin:0 auto;background:#fff;border:1px solid var(--line);
+    border-radius:var(--r);box-shadow:var(--shadow-l);padding:48px 40px;text-align:center}
+  .book-card .bk-ico{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;margin:0 auto 22px;
+    background:rgba(31,90,82,.08);color:var(--accent)}
+  .book-card .bk-ico svg{width:30px;height:30px}
+  .book-card h2{font-family:"Fraunces",serif;font-size:26px;font-weight:600;margin:0 0 10px}
+  .book-card p{color:var(--ink-2);font-size:15.5px;line-height:1.6;margin:0 auto 28px;max-width:420px}
+  .book-card .btn{min-width:240px}
+  /* Μικρότερο popup παράθυρο του Calendly */
+  .calendly-overlay .calendly-popup{max-width:620px!important;height:86vh!important;max-height:760px!important}
+  @media (max-width:560px){.book{padding:28px 0 70px}.book-card{padding:34px 22px}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="topbar scrolled" id="topbar">
+  <div class="shell nav">
+    <a class="brand" href="javascript:history.back()" aria-label="Επιστροφή">
+      <span class="brand-mark"><svg viewBox="0 0 46 46" fill="none"><circle cx="23" cy="23" r="22" stroke="currentColor" stroke-width="1.4"/><path d="M23 14v18M14 23h18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span>
+      <span class="brand-txt"><strong>Клиника Константиноса Мантикоса</strong><span>Online Прием</span></span>
+    </a>
+    <a class="btn primary" href="javascript:history.back()">← Επιστροφή</a>
+  </div>
+</header>
+
+<main>
+<section class="legal-head">
+  <div class="shell">
+    <div class="eyebrow">Online Прием</div>
+    <h1>Κλείστε το ραντεβού σας</h1>
+    <p class="updated">Διαθεσιμότητα: Понедельник έως Пятница 09:00-14:00 & Вторник, Четверг 17:00-20:00 — k.mantikos.med@gmail.com</p>
+  </div>
+</section>
+
+<div class="book">
+  <div class="shell">
+    <div class="book-card">
+      <span class="bk-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="m9 16 2 2 4-4"/></svg></span>
+      <h2>Επιλέξτε ημέρα & ώρα</h2>
+      <p>Το ημερολόγιο ραντεβού θα ανοίξει σε ένα παράθυρο πάνω σε αυτή τη σελίδα. Μπορείτε να το κλείσετε ανά πάσα στιγμή από το ✕.</p>
+      <button type="button" class="btn primary" id="openCalendly">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        Άνοιγμα ημερολογίου
+      </button>
+    </div>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="shell">
+    <div class="foot-bottom"><span>© <span id="year"></span> Клиника Константиноса Мантикоса — Врач общей и семейной практики.</span><span>Online Прием</span></div>
+    <p class="cb-credit" style="margin-top:18px;text-align:center;font-size:12.5px;opacity:.65">
+      Made by <a href="https://clinicbrain.gr/?utm_source=client-site&utm_medium=footer&utm_campaign=made-by" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;text-underline-offset:2px">CLINICBRAIN</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent=new Date().getFullYear();
+
+  var CAL_URL='https://calendly.com/k-mantikos-med/30min?hide_event_type_details=1&hide_gdpr_banner=1';
+  function openCalendly(){
+    if(window.Calendly){ Calendly.initPopupWidget({url:CAL_URL}); }
+    else { setTimeout(openCalendly,200); } // περίμενε να φορτώσει το widget.js
+    return false;
+  }
+  document.getElementById('openCalendly').addEventListener('click',openCalendly);
+  // Αυτόματο άνοιγμα μόλις φορτώσει η σελίδα
+  window.addEventListener('load',function(){ setTimeout(openCalendly,400); });
+</script>
+</body>
+</html>

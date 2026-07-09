@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Врач | Клиника Константиноса Мантикоса</title>
+<meta name="description" content="Ιατρείο Γενικής & Οικογενειακής Ιατρικής στην Афины (Κρήτης 24, πλησίον Σταθμού Λαρίσης). Ολοκληρωμένη φροντίδα, προληπτική ιατρική, διαχείριση χρόνιων νοσημάτων (διαβήτης, υπέρταση), ιατρικός βελονισμός και επισκέψεις κατ' οίκον από τον ιατρό Μαντικό Κωνσταντίνο, MD." />
+<meta name="theme-color" content="#1b1714" />
+
+<!-- ============ SEO ============ -->
+<link rel="canonical" href="https://drmantikos.gr/" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="author" content="Μαντικός Κωνσταντίνος, MD" />
+<meta name="keywords" content="γενικός ιατρός Афины, οικογενειακός ιατρός, παθολόγος, ιατρείο Κρήτης 24, Σταθμός Λαρίσης, σακχαρώδης διαβήτης, αρτηριακή υπέρταση, ιατρικός βελονισμός, προληπτική ιατρική, εμβολιασμοί, επισκέψεις κατ' οίκον, Μαντικός Κωνσταντίνος" />
+<link rel="alternate" hreflang="el" href="https://drmantikos.gr/" />
+<link rel="alternate" hreflang="x-default" href="https://drmantikos.gr/" />
+
+<!-- Geo -->
+<meta name="geo.region" content="GR-A1" />
+<meta name="geo.placename" content="Афины" />
+<meta name="geo.position" content="37.98924;23.72392" />
+<meta name="ICBM" content="37.98924, 23.72392" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Клиника Константиноса Мантикоса" />
+<meta property="og:locale" content="el_GR" />
+<meta property="og:title" content="Клиника общей и семейной медицины — Константинос Мантикос" />
+<meta property="og:description" content="Ολοκληρωμένη πρωτοβάθμια ιατρική φροντίδα στην Афины (Κρήτης 24): πρόληψη, χρόνια νοσήματα, ιατρικός βελονισμός, επισκέψεις κατ' οίκον." />
+<meta property="og:url" content="https://drmantikos.gr/" />
+<meta property="og:image" content="https://drmantikos.gr/assets/doctor-mantikos.jpg" />
+<meta property="og:image:alt" content="Δρ. Μαντικός Κωνσταντίνος — Врач общей и семейной практики" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Клиника общей и семейной медицины — Константинос Мантикос" />
+<meta name="twitter:description" content="Ολοκληρωμένη πρωτοβάθμια ιατρική φροντίδα στην Афины: πρόληψη, χρόνια νοσήματα, βελονισμός, επισκέψεις κατ' οίκον." />
+<meta name="twitter:image" content="https://drmantikos.gr/assets/doctor-mantikos.jpg" />
+
+<!-- Icons & Manifest -->
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="../favicon.ico" sizes="any" />
+<link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+<link rel="mask-icon" href="../favicon.svg" color="#1f5a52" />
+<link rel="manifest" href="../site.webmanifest" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/premium.css" />
+<style>
+  :root{
+    --accent:#1f5a52;--accent-deep:#163f39;--gold:#c08a3e;
+    --hero-bg:none; /* λευκό μέχρι να σταλεί φωτογραφικό υλικό από τον ιατρό */
+  }
+</style>
+<script>
+window.CLINIC_SCHEDULE = {
+  1: [[540,840]],             // Понедельник 09:00-14:00
+  2: [[540,840],[1020,1200]], // Вторник 09:00-14:00, 17:00-20:00
+  3: [[540,840]],             // Среда 09:00-14:00
+  4: [[540,840],[1020,1200]], // Четверг 09:00-14:00, 17:00-20:00
+  5: [[540,840]],             // Пятница 09:00-14:00
+  6: [],                      // Суббота
+  0: []                       // Воскресенье
+};
+</script>
+
+<!-- ============ Structured Data (schema.org) ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://drmantikos.gr/#website",
+      "url": "https://drmantikos.gr/",
+      "name": "Клиника Константиноса Мантикоса",
+      "inLanguage": "el",
+      "publisher": { "@id": "https://drmantikos.gr/#physician" }
+    },
+    {
+      "@type": ["Physician", "MedicalClinic", "LocalBusiness"],
+      "@id": "https://drmantikos.gr/#physician",
+      "name": "Клиника общей и семейной медицины — Константинос Мантикос",
+      "alternateName": "Δρ. Μαντικός Κωνσταντίνος",
+      "url": "https://drmantikos.gr/",
+      "image": "https://drmantikos.gr/assets/doctor-mantikos.jpg",
+      "logo": "https://drmantikos.gr/icon-512.png",
+      "description": "Ιατρείο Γενικής & Οικογενειακής Ιατρικής στην Афины. Ολοκληρωμένη πρωτοβάθμια φροντίδα: πρόληψη, διαχείριση χρόνιων νοσημάτων, ιατρικός βελονισμός, επείγοντα και επισκέψεις κατ' οίκον.",
+      "telephone": "+302108227740",
+      "email": "k.mantikos.med@gmail.com",
+      "priceRange": "€€",
+      "currenciesAccepted": "EUR",
+      "paymentAccepted": "Μετρητά, Κάρτα",
+      "medicalSpecialty": ["PrimaryCare", "Emergency"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Κρήτης 24",
+        "addressLocality": "Афины",
+        "postalCode": "10439",
+        "addressRegion": "Αττική",
+        "addressCountry": "GR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.98924,
+        "longitude": 23.72392
+      },
+      "hasMap": "https://www.google.com/maps/search/?api=1&query=%CE%9A%CF%81%CE%AE%CF%84%CE%B7%CF%82%2024%2C%20%CE%91%CE%B8%CE%AE%CE%BD%CE%B1%2010439",
+      "areaServed": [
+        { "@type": "City", "name": "Афины" },
+        { "@type": "AdministrativeArea", "name": "Αττική" }
+      ],
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Wednesday", "Friday"], "opens": "09:00", "closes": "14:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Thursday"], "opens": "09:00", "closes": "14:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Thursday"], "opens": "17:00", "closes": "20:00" }
+      ],
+      "availableService": [
+        { "@type": "MedicalProcedure", "name": "Διαχείριση & παρακολούθηση χρόνιων νοσημάτων (Сахарный диабет, Гипертония, Δυσλιπιδαιμία)" },
+        { "@type": "MedicalProcedure", "name": "Προληπτική ιατρική & check-up" },
+        { "@type": "MedicalProcedure", "name": "Вакцинация παιδιών και ενηλίκων" },
+        { "@type": "MedicalTherapy", "name": "Ιατρικός βελονισμός" },
+        { "@type": "MedicalProcedure", "name": "Αντιμετώπιση επειγόντων περιστατικών & συρραφή τραυμάτων" },
+        { "@type": "MedicalProcedure", "name": "Визиты на дом" },
+        { "@type": "MedicalTest", "name": "Электрокардиограмма (ΗΚΓ)" },
+        { "@type": "MedicalProcedure", "name": "Ηλεκτρονική συνταγογράφηση & ιατρικά πιστοποιητικά" }
+      ],
+      "founder": { "@id": "https://drmantikos.gr/#doctor" },
+      "employee": { "@id": "https://drmantikos.gr/#doctor" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://drmantikos.gr/#doctor",
+      "name": "Μαντικός Κωνσταντίνος",
+      "honorificPrefix": "Δρ.",
+      "honorificSuffix": "MD",
+      "jobTitle": "Врач общей и семейной практики",
+      "image": "https://drmantikos.gr/assets/doctor-mantikos.jpg",
+      "url": "https://drmantikos.gr/",
+      "worksFor": { "@id": "https://drmantikos.gr/#physician" },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Ιατρική Σχολή, Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών (ΕΚΠΑ)"
+      },
+      "knowsAbout": [
+        "Γενική Ιατρική",
+        "Οικογενειακή Ιατρική",
+        "Сахарный диабет",
+        "Гипертония",
+        "Медицинская акупунктура",
+        "Медицина образа жизни",
+        "Επείγουσα Προνοσοκομειακή Ιατρική"
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<div class="glow" id="glow"></div>
+<div class="progress" id="progress"></div>
+<div class="overlay" id="overlay"></div>
+
+<header class="topbar" id="topbar">
+  <div class="shell nav">
+    <a class="brand" href="index.html" aria-label="Клиника Константиноса Мантикоса">
+      <span class="brand-mark">
+        <svg viewBox="0 0 46 46" fill="none">
+          <circle cx="23" cy="23" r="22" stroke="currentColor" stroke-width="1.4"/>
+          <path d="M23 14v18M14 23h18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand-txt"><strong>Клиника Константиноса Мантикоса</strong><span>Врач общей и семейной практики</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="about.html">Врач</a>
+      <a href="services.html">Услуги</a>
+      <a href="services.html#exams">Обследования</a>
+      <a href="contact.html#hours">Часы работы</a>
+      <a href="about.html#reviews">Отзывы</a>
+    </nav>
+    <div class="nav-side">
+      
+    <div class="lang-switch" style="display:flex; gap:10px; font-weight:600; font-size:14px;">
+      <a href="/index.html" >EL</a>
+      <a href="/en/index.html">EN</a>
+      <a href="/ru/index.html" class="active" style="color:var(--accent)">RU</a>
+    </div>
+    
+      <a class="nav-phone" href="tel:+302108227740">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        210 8227740
+      </a>
+      <a class="btn primary" href="contact.html" data-magnetic>Прием</a>
+      <div class="hamburger" id="hamburger" aria-label="Μενού"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</header>
+<aside class="drawer" id="drawer">
+  <a class="dlink" href="about.html">Врач <b>01</b></a>
+  <a class="dlink" href="services.html">Услуги <b>02</b></a>
+  <a class="dlink" href="services.html#exams">Обследования <b>03</b></a>
+  <a class="dlink" href="contact.html#hours">Часы работы <b>04</b></a>
+  <a class="dlink" href="about.html#reviews">Отзывы <b>05</b></a>
+  <a class="btn primary" href="contact.html">Записаться</a>
+
+    <div class="drawer-lang" style="display:flex; gap:15px; margin-top:20px; font-weight:600; font-size:16px;">
+      <a href="/index.html" >EL</a>
+      <a href="/en/index.html">EN</a>
+      <a href="/ru/index.html" class="active" style="color:var(--accent)">RU</a>
+    </div>
+    
+</aside>
+<main>
+<section class="section about" id="about">
+  <div class="shell">
+    <div class="about-grid">
+      <div class="about-figure reveal">
+        <img src="../assets/doctor-mantikos.jpg" alt="Φωτογραφία ιατρού — Μαντικός Κωνσταντίνος" />
+        <div class="tag"><strong>MD</strong><span>Γενικός/Οικογενειακός Ιατρός</span></div>
+      </div>
+      <div class="about-body">
+        <div class="kicker"><span class="num">01</span> Врач</div>
+        <h2>Доктор <em>Мантикос Константинос, MD</em></h2>
+        <p class="intro reveal">«Общая и семейная медицина рассматривает человека целостно — уделяя особое внимание профилактике, лечению и образу жизни для его долгосрочного здоровья.»</p>
+        <p class="reveal">Доктор Константинос Мантикос окончил медицинский факультет Афинского университета (2014) и получил специализацию по общей/семейной медицине (2020). Применяя комплексный подход, он сочетает клиническую практику со специализированным последипломным обучением по медицинской акупунктуре, диабету, неотложной медицине (EKAB), медицине образа жизни (Фессалийский университет/UTH) и персональному тренеру по питанию (NKUA), предлагая комплексные медицинские услуги.</p>
+        <ul class="cred-list reveal">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg><span><b>MD (ΕΚΠΑ)</b> — Специалист по общей/семейной медицине (2020)</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><b>Дополнительное образование</b> — Диабет (Афинский университет), Неотложная медицина (EKAB), Медицина образа жизни (Фессалийский университет/UTH) и Персональный тренер по питанию (Афинский университет)</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg><span><b>Целостный подход</b> — Сертифицирован по медицинской акупунктуре с упором на профилактику и образ жизни</span></li>
+        </ul>
+        <a class="btn primary" href="#contact" data-magnetic style="margin-top:32px">Связь с клиникой</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section reviews" id="reviews">
+  <div class="shell">
+    <div class="shead reveal">
+      <div>
+        <div class="kicker"><span class="num">05</span> Опыт пациентов</div>
+        <h2>Что говорят те, кто нам <em>доверился</em></h2>
+      </div>
+      <p class="lead">Общая оценка <b style="color:var(--ink)">5.0 / 5.0</b> по отзывам пациентов в Google.</p>
+    </div>
+    <div class="rev-track" id="revTrack">
+      <article class="rev-card"><div class="stars">★★★★★</div><p>«Наш врач для всей семьи. Мы методично стабилизировали диабет и гипертонию, и его советы по диете и упражнениям сыграли решающую роль.»</p><div class="rev-who"><span class="av">Μ</span><div><b>Μαρία Κ.</b><span>Пациент · Google</span></div></div></article>
+      <article class="rev-card"><div class="stars">★★★★★</div><p>«Уделяет время, осматривает всё и не назначает лишнего. Редкая в наше время внимательность к пациенту.»</p><div class="rev-who"><span class="av">Δ</span><div><b>Δημήτρης Π.</b><span>Пациент · Google</span></div></div></article>
+      <article class="rev-card"><div class="stars">★★★★★</div><p>«Комплексное обследование на месте, ЭКГ и клинический осмотр. Отличная организация и четкое информирование.»</p><div class="rev-who"><span class="av">Ε</span><div><b>Ελένη Σ.</b><span>Пациент · Google</span></div></div></article>
+      <article class="rev-card"><div class="stars">★★★★★</div><p>«Наблюдает меня по хроническим проблемам уже много лет. Всегда доступен, внимателен и действительно человечен.»</p><div class="rev-who"><span class="av">Γ</span><div><b>Γιώργος Α.</b><span>Пациент · Google</span></div></div></article>
+    </div>
+    <div class="rev-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg> Проведите для других отзывов</div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="shell">
+    <div class="foot-top">
+      <div class="foot-brand"><strong>Клиника Константиноса Мантикоса</strong><span>Врач общей и семейной практики</span></div>
+      <nav class="foot-nav">
+        <a href="about.html">Врач</a><a href="services.html">Услуги</a><a href="services.html#exams">Обследования</a><a href="contact.html#hours">Часы работы</a><a href="contact.html">Контакты</a>
+      </nav>
+    </div>
+    <div class="foot-legal">
+      <a href="../legal/terms.html">Условия использования</a><span class="sep">·</span>
+      <a href="../legal/privacy.html">Политика конфиденциальности</a><span class="sep">·</span>
+      <a href="../legal/cookies.html">Политика файлов cookie</a><span class="sep">·</span>
+      <a href="../legal/cookie-terms.html">Условия файлов cookie</a><span class="sep">·</span>
+      <a href="#" data-cookie-settings>Настройки файлов cookie</a>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Клиника Константиноса Мантикоса — Врач общей и семейной практики.</span>
+      <span>Κρήτης 24, 104 39 Афины · 210 8227740</span>
+    </div>
+    <p class="cb-credit" style="margin-top:18px;text-align:center;font-size:12.5px;opacity:.65">
+      Made by <a href="https://clinicbrain.gr/?utm_source=client-site&utm_medium=footer&utm_campaign=made-by" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;text-underline-offset:2px">CLINICBRAIN</a>
+    </p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Наверх">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="../assets/premium.js"></script>
+<script src="../cookie-consent.js"></script>
+</body>
+</html>

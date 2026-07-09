@@ -59,8 +59,23 @@
 
   /* ---- scroll-spy ---- */
   var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav-links a'));
-  var secs = navLinks.map(function(a){ return {a:a, sec:document.querySelector(a.getAttribute('href'))}; })
-                     .filter(function(o){ return o.sec; });
+  var secs = navLinks.map(function(a){ 
+    var href = a.getAttribute('href');
+    var sec = null;
+    if (href && href.startsWith('#')) {
+      try { sec = document.querySelector(href); } catch(e) {}
+    } else if (href && href.indexOf('#') > -1) {
+      // It's a page link with a hash like 'services.html#exams'
+      // If we are currently on 'services.html', we can try to select the hash
+      var parts = href.split('#');
+      var page = parts[0];
+      var hash = '#' + parts[1];
+      if (window.location.pathname.endsWith(page)) {
+        try { sec = document.querySelector(hash); } catch(e) {}
+      }
+    }
+    return {a:a, sec:sec}; 
+  }).filter(function(o){ return o.sec; });
   if(secs.length){
     var spy = new IntersectionObserver(function(es){
       es.forEach(function(e){
