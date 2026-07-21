@@ -91,6 +91,14 @@
   document.getElementById('openCalendly').addEventListener('click',openCalendly);
   // Αυτόματο άνοιγμα μόλις φορτώσει η σελίδα
   window.addEventListener('load',function(){ setTimeout(openCalendly,400); });
+
+  // Redirect to the thank-you page once the appointment is booked (conversion tracking)
+  window.addEventListener('message',function(e){
+    if(e.origin.indexOf('calendly.com')===-1) return;
+    if(e.data && e.data.event==='calendly.event_scheduled'){
+      window.location.href='thank-you.html';
+    }
+  });
 </script>
 </body>
 </html>
