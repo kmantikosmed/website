@@ -302,6 +302,10 @@ footer{background:var(--cream);color:var(--muted);padding:54px 0 34px;border-top
 .foot-legal a:hover{color:var(--accent)}
 .foot-legal .sep{color:var(--line);font-size:11px}
 .foot-bottom{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12px}
+.foot-award{display:flex;justify-content:center;padding:4px 0 22px}
+.foot-award a{display:inline-block;opacity:.9;transition:opacity .2s}
+.foot-award a:hover{opacity:1}
+.foot-award img{display:block;width:170px;height:auto}
 
 /* ---------- back to top ---------- */
 .to-top{position:fixed;right:24px;bottom:24px;width:52px;height:52px;border:none;cursor:pointer;border-radius:50%;
